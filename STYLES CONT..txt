@@ -1,0 +1,76 @@
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+  <hr />
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Alura</h2>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+‎styles.css
++2
+Original file line number	Diff line number	Diff line change
+@@ -2,6 +2,8 @@
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #EBECEE;
+‎styles/contato.css
++37
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,37 @@
+.contato {
+    background-color: var(--branco);
+    padding: 1em;
+}
+.contato__titulo,
+.contato__texto {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+.contato__texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+.contato__email {
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 90%;
+    color: var(--azul);
+}
+.contato__email::placeholder {
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    background: url("../img/Email.svg") no-repeat;
+    padding-left: 2em;
+}
+‎styles/rodapé.css
++8
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,8 @@
+hr {
+    margin: 0;
+}
+.rodapé {
+    background-color: var(--branco);
+    padding: 1em;
+}
